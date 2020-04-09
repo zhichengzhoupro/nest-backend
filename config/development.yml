@@ -1,0 +1,8 @@
+db:
+  type: 'postgres'
+  host: 'localhost'
+  username: 'postgres'
+  password: 'postgres'
+  database: 'nestbackend'
+  port: 5432
+  synchronize: true
