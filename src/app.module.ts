@@ -1,5 +1,5 @@
 import {Module} from '@nestjs/common';
-import {AuthModule} from './auth/auth.module';
+import {UserModule} from './user/userModule';
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {dbConnect} from "./config/tyorm.config";
 
@@ -8,7 +8,7 @@ import {dbConnect} from "./config/tyorm.config";
       TypeOrmModule.forRoot({
         ...dbConnect
       }),
-        AuthModule],
+        UserModule],
 
 })
 export class AppModule {

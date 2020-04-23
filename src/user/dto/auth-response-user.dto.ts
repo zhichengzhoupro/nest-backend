@@ -1,4 +1,4 @@
-class AuthResponseUser {
+export class AuthResponseUser {
 
     id: number;
 
@@ -16,3 +16,4 @@ export default class AuthResponseUserDto {
 
     user: AuthResponseUser;
 }
+

@@ -6,3 +6,6 @@ db:
   database: 'nestbackend'
   port: 5432
   synchronize: true
+
+jwt:
+  secret: 'secret zhicheng'

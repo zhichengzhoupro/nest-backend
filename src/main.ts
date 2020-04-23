@@ -11,6 +11,11 @@ async function bootstrap() {
         .setDescription('Nest backend')
         .setVersion('1.0')
         .build();
+    if(process.env.NODE_ENV === 'development') {
+        app.enableCors();
+    } else {
+        app.enableCors();
+    }
 
     const document = SwaggerModule.createDocument(app, options);
     SwaggerModule.setup('api', app, document);
